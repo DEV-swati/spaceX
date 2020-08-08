@@ -1,8 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Sapient Space-X Launch Assignmnet
 
-# Sapient Space-X Launch Assignmnet
-
-## Demo
+# Demo
 
 To see the demo please click [here](https://vigilant-visvesvaraya-89f8bf.netlify.app/)
 
