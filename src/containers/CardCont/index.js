@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import { makeStyles } from "@material-ui/core/styles";
 import { useDispatch, useSelector } from "react-redux";
+import { makeStyles } from "@material-ui/core/styles";
 import { getLaunchData } from "../../modules/action";
 import Card from "../../components/Card";
 import { Grid } from "@material-ui/core";
@@ -20,7 +20,7 @@ export const CardCont = () => {
 
   useEffect(() => {
     dispatch(getLaunchData());
-  }, []);
+  }, [dispatch]);
 
   return (
     <>
