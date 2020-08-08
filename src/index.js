@@ -1,14 +1,31 @@
-import React from 'react';
+import React, { Profiler } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import rootReducer from './rootReducer';
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk'
+import { Provider } from 'react-redux';
+
+const initialState = {};
+const middleware = [thunk];
+
+export const store = createStore(
+  rootReducer,
+  initialState,
+  applyMiddleware(...middleware)
+);
+
+const logProfile = () => { }
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <Provider store={store}>
+    <Profiler id="main" onRender={logProfile}>
+      <App />
+    </Profiler>
+  </Provider>,
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change
