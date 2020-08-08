@@ -1,6 +1,6 @@
-## Sapient Space-X Launch Assignmnet
+# Sapient Space-X Launch Assignmnet
 
-# Demo
+## Demo
 
 To see the demo please click [here](https://vigilant-visvesvaraya-89f8bf.netlify.app/)
 
